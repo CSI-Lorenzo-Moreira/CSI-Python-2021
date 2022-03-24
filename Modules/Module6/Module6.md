@@ -1,8 +1,8 @@
 <div style="text-align:center">
         <img    src="https://www.nylas.com/wp-content/uploads/JSON_Blog_Hero.png"
                 title="JSON" 
-                width="40%" 
-                height="40%" />
+                width="70%" 
+                height="70%" />
 </div>
 <br>
 
@@ -21,14 +21,21 @@ JSON is a format that encodes objects into a string.
   * An object constructor is like a function. It's function is included by default in all classes. it is used by writing a function called `__init__`.You define how many parameters it includes. You also define what variables are stored into your object by assigning them to `self`.
 
 ```python
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0e5f84f7e8022bf531606f53d111ca5c8429f9fc
 class Student:
   def __init__(self,  id:str, name:str):
     self.id = id
     self.name = name
+<<<<<<< HEAD
+s = Student("14-146", "Carlos Cobian")
+=======
 
 s = Student("14-146", "Carlos Cobian")
 
+>>>>>>> 0e5f84f7e8022bf531606f53d111ca5c8429f9fc
 ```
 
 <br>
@@ -43,26 +50,41 @@ s = Student("14-146", "Carlos Cobian")
 
 ### Serialization of an object into a file
 This file will be placed in the same directory as the script being executed.
+See the below example. It will not run until our class labeled `ObjectDataType` is defined.
 
 ```python
+# List of Students
+students = [
+  Student("14-146", "Carlos Cobian"),
+  Student("98-007", "Jose Quintana")
+]
+<<<<<<< HEAD
 # Determine output Directory
 myOutputPath = Path(__file__).parents[0]
-myOutputFilePath = os.path.join(myOutputPath, 'student.json')
+myOutputFilePath = os.path.join(myOutputPath, 'students.json')
+=======
 
+# Determine output Directory
+myOutputPath = Path(__file__).parents[0]
+myOutputFilePath = os.path.join(myOutputPath, 'students.json')
+
+>>>>>>> 0e5f84f7e8022bf531606f53d111ca5c8429f9fc
 # Serialization
 with open(myOutputFilePath, 'w') as outfile:
-  json.dump(s.__dict__, outfile)
+  # For a single student seen above use: json.dump(s.__dict__, outfile)
+  # For loop will include all students in list.
+  json.dump([data.__dict__ for data in myDataSet], outfile)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e5f84f7e8022bf531606f53d111ca5c8429f9fc
 ```
 
 ### Deserializing using a class
-Passing each parameter to a constructor is tedious work. By using the two asterisks `**` we may take a JSON object and load it into a class. This will automatically match each class parameter with the equally named one found on the JSON object. 
 ```python
-# Load file as JSON
-file = open('student.json',)
-studentJson = json.load(file)
-
-# Construct Student Object
-myStudent = Student(**studentJson)
+file = open('ExperimentData.json',)
+experimentJson = json.load(file)
+myObject = ExperimentData(**experimentJson)
 ```
 
 <br>
@@ -72,20 +94,25 @@ myStudent = Student(**studentJson)
 <!-- Welcome! These are your questions. -->
 <!-- Answer using full sentences to receive all points. -->
 <!-- 
-
 What does JSON Stand for?
-
- - Answer:
-
+ - Answer: JavaScript Object Notation
 Why are JSON formats important?
-
- - Answer:
+ - Answer: Easy way to store information in a program. 
 
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
-
  - Answer:
+ class ExperimentalData:
+    def __init__(self, ball:str, amongus:str, deezwhatsir:str, bruh:str): 
+        self.ball = ball
+        self.amongus = amongus
+        self.deezwhatsir = deezwhatsir
+        self.bruh = bruh
+      
 
 What is the difference between serialization and deserialization?
+<<<<<<< HEAD
+ - Answer: Serialization converts an object into a stream of bytes, while deserialization converts a stream of bytes into an object.
+=======
 
  - Answer:
 
@@ -95,8 +122,12 @@ Research data persistance. What did you find?
 
 Type down any class notes below this sentence:
 
+>>>>>>> 0e5f84f7e8022bf531606f53d111ca5c8429f9fc
 
+Research data persistance. What did you find?
+ - Answer: Data persistance means that data created by a program exists in some kind of repository even after the program stops running. It must be written into a non-volatile storage. 
 
+Type down any class notes below this sentence:
 Lackluster responses may result in point deductions.
 -->
 

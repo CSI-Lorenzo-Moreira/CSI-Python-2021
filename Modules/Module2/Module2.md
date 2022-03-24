@@ -1,8 +1,8 @@
 <div style="text-align:center">
-        <img    src="https://www.tmssoftware.com/images/visualstudiocodelogo.png" 
+        <img    src="../../images/csi.png" 
                 title="Colegio San Ignacio" 
-                width="50%" 
-                height="50%" />
+                width="20%" 
+                height="20%" />
 </div>
 <br>
 
@@ -27,8 +27,8 @@ Markdown is a lightweight markup language that you can use to add formatting ele
 ### The first thing you will see on the left-most side of visual studio code is the file system for the course.
 <img    src="VSLeftPanel.png" 
         title="Files available on the directory may vary from the time of the screenshot" 
-        width="50%" 
-        height="50%" />
+        width="60%" 
+        height="60%" />
 
 <br>
 
@@ -106,7 +106,7 @@ Typing `python` *(or `python3`)* into the terminal will enter the Python console
 
 ### The output should look similar to this:
 
-<img    src="Module2-1.png" 
+<img    src="CSI-Carlos-Cobian-Module2-1.png" 
         title="HelloCarlos!" 
         width="80%" 
         height="80%" />
@@ -114,7 +114,7 @@ Typing `python` *(or `python3`)* into the terminal will enter the Python console
 ### Take a screenshot of your terminal's output showing the same elements as above. 
 * #### On Windows use `WIN+SHFT+S` to make a selection.
 * #### Save it in the <u>Module2</u> directory of your branch. 
-* #### Name the file using the following convention: `Module2-1.png`
+* #### Name the file using the following convention: `CSI-Carlos-Cobian-Module2-1.png`
 
 
 ### Commit and push this image before the next lecture`(2pts)`
@@ -131,15 +131,15 @@ Typing `python` *(or `python3`)* into the terminal will enter the Python console
 What is a benefit of using Markdown?
 https://www.markdownguide.org/getting-started/
 
- - Answer:
+ - Answer: One of the main benefits of using markdown is that it is portable. Moreover, it can be imported to several formats/apps. 
 
 What does "cd" stand for?
 
- - Answer:
+ - Answer: Change Directory.
 
 Did you get stuck at any point or become confused with your console? (yes/no) If so, what happened? How did you solve it?
 
- - Answer:
+ - Answer: no. this isn't the first time I have used this program, so I didn't have much issues regarding the console itself. 
 
 Did you consider searching google for other commands to run? What did you try? 
 
@@ -147,7 +147,7 @@ Did you consider searching google for other commands to run? What did you try?
 
 What would you like to program? 
 
- - Answer:
+ - Answer: I would like to program snake or tic tac toe. Either would be pretty funny.
 
 Type down any class notes below this sentence:
 

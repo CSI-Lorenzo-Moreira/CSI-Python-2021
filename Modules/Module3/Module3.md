@@ -96,24 +96,30 @@ print(type(age))
 
 What is the difference between "42" and 42.
 
- - Answer:
+ - Answer: "42" represents a string, while 42 represents an integer. 
 
 Define the boolean operators: >, <, ==, >=, <=
 
  - Answer:
+ > greater than
+ < less than
+ == equal to
+ >= greater than or equal to
+ <= less than or equal to 
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
 
- - Answer:
+ - Answer: 
+ variable = arr[4]
 
 What is the first index of a list? Why?
 
- - Answer:
+ - Answer: arr[0]. this code addresses the first value in the array list, as python starts at [0], unlike java that starts at [1].
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer:
+ - Answer: Null just means something that hasn't been defined yet. For example, the amount of times I have failed the driving test. 
 
 Type down any class notes below this sentence:
 
